@@ -1,0 +1,106 @@
+
+/* @font-face {
+  font-family: poppinsMedium;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: poppinsRegular;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppinsSemiBold;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: ibmPlexSerifRegular;
+  src: url(../fonts/IBMPlexSerif-Regular.ttf);
+}
+@font-face {
+  font-family: ibmPlexSerifSemiBold;
+  src: url(../fonts/IBMPlexSerif-SemiBold.ttf);
+}
+@font-face {
+  font-family: nunitoSansRegular;
+  src: url(../fonts/NunitoSans-Regular.ttf);
+}
+@font-face {
+  font-family: nunitoSantLight;
+  src: url(../fonts/NunitoSans-Light.ttf);
+}
+@font-face {
+  font-family: nunitoSansSemiBold;
+  src: url(../fonts/NunitoSans-SemiBold.ttf);
+} */
+/* .product-list {
+    display: none !important;
+  } */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Rubik:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.4;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: Rubik, Nunito, Georgia, 'Times New Roman', Times, serif;
+  overflow-x: hidden;
+}
+
+.header, .home {
+  padding: 0 40px;
+}
+
+.header-body, .news {
+  margin-inline: auto;
+  /* max-width: 1480px; */
+}
+
+.container {
+  max-width: 1480px;
+  margin-inline: auto;
+}
+
+@media (max-width: 576px) {
+  .header, .home {
+    padding: 0 15px;
+  }
+}
+/*
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1390px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1590px;
+  }
+} */

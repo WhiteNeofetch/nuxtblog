@@ -1,0 +1,41 @@
+$fsz: 1.4rem;
+
+.header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top 1.4s ease-in-out;
+  background-color: #fff;
+
+  & .header-body {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+
+    & .header-logo {
+      font-size: $fsz;
+      cursor: pointer;
+    }
+
+    & .header-menu {
+      display: flex;
+
+      &>div {
+        margin-right: 20px;
+        font-size: $fsz;
+        cursor: pointer;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &.header-hide {
+    top: -100%;
+  }
+}

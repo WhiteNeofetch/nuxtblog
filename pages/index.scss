@@ -1,0 +1,111 @@
+$primaryCardTitle: 3rem;
+$primaryCardTime: 1rem;
+$primaryCardText: 2rem;
+
+$imgSize768: 36%;
+
+$marginBottom: 10px;
+
+.home {
+  margin-top: 50px;
+  padding-bottom: 40px;
+
+  & h1 {
+    font-size: 2.5rem;
+  }
+
+  .news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+
+    & > .card-news:first-child {
+      flex-wrap: wrap;
+      gap: 10px;
+      flex-direction: row;
+      flex: 100%;
+      opacity: 1;
+      transform: translate(0);
+
+      & > .card-img {
+        position: relative;
+        flex: 1 569px;
+
+        & > img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        @media (min-width: 768px) {
+          padding-top: $imgSize768;
+        }
+
+        @media (max-width: 768px) {
+          padding-top: 100%;
+          // flex-wrap: nowrap;
+          flex: 1 100%;
+        }
+      }
+
+      & > .card-text {
+        display: flex;
+        flex: 1 calc(45% - 20px);
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+          & > time {
+            font-size: $primaryCardTime;
+          }
+
+          & > h2 {
+            font-size: $primaryCardTitle;
+          }
+
+          & > p {
+            font-size: $primaryCardText;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+    }
+    // & .primary-news {
+    //   margin-bottom: 10px;
+
+    // }
+
+    // & .secondary-news {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   gap: 20px 10px;
+
+    //   & > div {
+    //     flex-direction: column;
+    //     flex: 0 1 calc(33.333% - 7px);
+    //     transform: translateY(200px);
+    //     opacity: 0;
+    //     transition: opacity 1s linear, transform 1.5s ease-out;
+
+    //     @media (max-width: 1024px) {
+    //       flex: 0 1 calc(50% - 10px);
+    //     }
+
+    //     @media (max-width: 768px) {
+    //       flex: 1 100%;
+    //     }
+
+    //     &.show {
+    //       transform: translate(0);
+    //       opacity: 1;
+    //     }
+    //   }
+    // }
+  }
+}
